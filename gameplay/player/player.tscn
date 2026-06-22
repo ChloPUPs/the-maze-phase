@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bhylmr5ea4nt4"]
 
-[ext_resource type="Script" uid="uid://cby08q6bb1yof" path="res://complex_objects/player.gd" id="1_5l3qn"]
-[ext_resource type="Texture2D" uid="uid://1048rnua0623" path="res://complex_objects/enbanc.png" id="2_5l3qn"]
-[ext_resource type="Texture2D" uid="uid://nycqve7xg6x3" path="res://complex_objects/enbancidle.png" id="2_dkyos"]
+[ext_resource type="Script" uid="uid://cby08q6bb1yof" path="res://gameplay/player/player.gd" id="1_5l3qn"]
+[ext_resource type="Texture2D" uid="uid://1048rnua0623" path="res://gameplay/player/en_banc/enbanc.png" id="2_5l3qn"]
+[ext_resource type="Texture2D" uid="uid://nycqve7xg6x3" path="res://gameplay/player/en_banc/enbancidle.png" id="2_dkyos"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fb7sh"]
 atlas = ExtResource("2_dkyos")
@@ -150,8 +150,9 @@ animations = [{
 "speed": 15.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_phnjc"]
-size = Vector2(10, 26)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ig7tw"]
+radius = 5.0
+height = 26.0
 
 [node name="Player" type="CharacterBody2D" unique_id=2117719914]
 script = ExtResource("1_5l3qn")
@@ -164,4 +165,4 @@ autoplay = "idle"
 offset = Vector2(0, -6)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=901170459]
-shape = SubResource("RectangleShape2D_phnjc")
+shape = SubResource("CapsuleShape2D_ig7tw")

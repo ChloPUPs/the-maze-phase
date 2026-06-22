@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nycqve7xg6x3"
-path="res://.godot/imported/enbancidle.png-62e7e0c33d15bf820c680b52f54e0bc5.ctex"
+uid="uid://1048rnua0623"
+path="res://.godot/imported/enbanc.png-2247165e7eca275d02be7d3426e06ffb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://complex_objects/enbancidle.png"
-dest_files=["res://.godot/imported/enbancidle.png-62e7e0c33d15bf820c680b52f54e0bc5.ctex"]
+source_file="res://gameplay/player/en_banc/enbanc.png"
+dest_files=["res://.godot/imported/enbanc.png-2247165e7eca275d02be7d3426e06ffb.ctex"]
 
 [params]
 

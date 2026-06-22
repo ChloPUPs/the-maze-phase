@@ -1,8 +1,14 @@
 [gd_scene format=3 uid="uid://dc0ryi4rvrnsi"]
 
-[ext_resource type="PackedScene" uid="uid://bhylmr5ea4nt4" path="res://complex_objects/player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://bhylmr5ea4nt4" path="res://gameplay/player/player.tscn" id="1_ig7tw"]
 
-[node name="Main" type="Node2D" unique_id=783776306]
+[node name="Main" type="Node" unique_id=1269985117]
+process_mode = 3
 
-[node name="Player" parent="." unique_id=1305677859 instance=ExtResource("1_ig7tw")]
+[node name="World" type="Node2D" parent="." unique_id=1726067309]
+process_mode = 1
+
+[node name="EntityRoot" type="Node2D" parent="World" unique_id=462983290]
+
+[node name="Player" parent="World/EntityRoot" unique_id=1305677859 instance=ExtResource("1_ig7tw")]
 position = Vector2(204, 240)
