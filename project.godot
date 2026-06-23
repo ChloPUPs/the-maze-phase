@@ -12,10 +12,10 @@ config_version=5
 
 config/name="The Maze Phase"
 config/version="0.1.0"
+config/tags=PackedStringArray("metroidvania", "puzzle", "roguelike", "rpg")
 run/main_scene="uid://dc0ryi4rvrnsi"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="uid://nycqve7xg6x3"
-config/tags=PackedStringArray("metroidvania", "puzzle", "roguelike", "rpg")
+config/icon="uid://ccvktus85cavc"
 
 [debug]
 
