@@ -1,3 +1,4 @@
+class_name Player
 extends CharacterBody2D
 
 const SPEED : float = 120.0
@@ -8,12 +9,12 @@ const SPEED : float = 120.0
 func _physics_process(_delta : float) -> void:
 	velocity = _get_movement()
 
+	move_and_slide()
+
 	if abs(velocity) > Vector2.ZERO:
 		sprite.play("walk_down")
 	else:
 		sprite.play("idle")
-
-	move_and_slide()
 
 
 func _get_movement() -> Vector2:
